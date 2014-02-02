@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'feedig'
+Feedig::Client.run

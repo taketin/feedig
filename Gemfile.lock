@@ -1,0 +1,46 @@
+PATH
+  remote: .
+  specs:
+    feedig (0.0.1)
+      faraday
+      feedzirra (~> 0.7)
+      json
+      net-irc
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coderay (1.1.0)
+    curb (0.8.5)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    feedzirra (0.7.0)
+      curb (~> 0.8.1)
+      loofah (~> 1.2.1)
+      sax-machine (~> 0.2.1)
+    json (1.8.1)
+    loofah (1.2.1)
+      nokogiri (>= 1.4.4)
+    method_source (0.8.2)
+    mini_portile (0.5.2)
+    multipart-post (2.0.0)
+    net-irc (0.0.9)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
+    pry (0.9.12.4)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    rake (10.1.1)
+    sax-machine (0.2.1)
+      nokogiri (~> 1.6.0)
+    slop (3.4.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.5)
+  feedig!
+  pry
+  rake
