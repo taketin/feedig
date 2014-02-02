@@ -4,17 +4,26 @@ Feedig is Feed IRC Gateway, forked hsbt's [agig.rb](https://github.com/hsbt/agig
 
 ## Installation
 
-$ git clone git@github.com:taketin/feedig.git
+`$ git clone git@github.com:taketin/feedig.git`
 
 ## Usage
 
+```
 $ cd feedig
-Add the feed url to 'resources.yml'
+
+# Add the feed url to 'resources.yml'
+
 $ ./bin/feedig -d
-join '#notification' channel in your IRC client.
+
+# join '#notification' channel in your IRC client.
+```
+
 
 change the interval to fetch
+
+```
 $ ./bin/feedig -d -i #{second}
+```
 
 ## Contributing
 
