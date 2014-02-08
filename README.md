@@ -4,7 +4,7 @@ Feedig is Feed IRC Gateway, forked hsbt's [agig.rb](https://github.com/hsbt/agig
 
 ## Installation
 
-`$ git clone git@github.com:taketin/feedig.git`
+`$ gem install feedig`
 
 ## Usage
 
@@ -13,7 +13,7 @@ $ cd feedig
 
 # Add the feed url to 'resources.yml'
 
-$ ./bin/feedig -d
+$ feedig -d
 
 # join '#notification' channel in your IRC client.
 ```
@@ -22,7 +22,7 @@ $ ./bin/feedig -d
 change the interval to fetch
 
 ```
-$ ./bin/feedig -d -i #{second}
+$ feedig -d -i #{second}
 ```
 
 ## Contributing
