@@ -33,7 +33,6 @@ class Feedig::Session < Net::IRC::Server::Session
 
     channels.each { |channel| post @nick, JOIN, channel }
 
-    # go to method
     client.each_pair do |name, feed|
       post(
         "RECENT",
@@ -55,7 +54,8 @@ class Feedig::Session < Net::IRC::Server::Session
   def retrieve(interval)
     @log.info 'retrieveing feed...'
 
-    @client.each_pair do |name, feed|
+    client.each_pair do |name, feed|
+      feed = Feedzirra::Feed.update feed
       if feed.has_new_entries?
         feed.new_entries.each do |new_entry|
           post(
