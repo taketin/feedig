@@ -24,5 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'net-irc'
   spec.add_runtime_dependency 'json'
   spec.add_runtime_dependency 'faraday'
-  spec.add_runtime_dependency 'feedzirra', "~> 0.7"
+  spec.add_runtime_dependency 'feedzirra', "~> 0.7.1"
 end
